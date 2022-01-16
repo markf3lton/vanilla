@@ -26,6 +26,7 @@
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/core-vendor-hardening": "^9.3",
+        "drupal/devel": "^4.1",
         "drupal/stage_file_proxy": "^1.2",
         "drush/drush": "^11.0"
     },
@@ -49,35 +50,35 @@
     "extra": {
         "drupal-scaffold": {
             "locations": {
-                "web-root": "./"
+                "web-root": "./docroot"
             }
         },
-        "installer-paths": {
-            "core": [
+	        "installer-paths": {
+            "docroot/core": [
                 "type:drupal-core"
             ],
-            "libraries/{$name}": [
+            "docroot/libraries/{$name}": [
                 "type:drupal-library"
             ],
-            "modules/contrib/{$name}": [
+            "docroot/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "profiles/contrib/{$name}": [
+            "docroot/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "themes/contrib/{$name}": [
+            "docroot/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
             "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ],
-            "modules/custom/{$name}": [
+            "docroot/modules/custom/{$name}": [
                 "type:drupal-custom-module"
             ],
-            "profiles/custom/{$name}": [
+            "docroot/profiles/custom/{$name}": [
                 "type:drupal-custom-profile"
             ],
-            "themes/custom/{$name}": [
+            "docroot/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
         },
